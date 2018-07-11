@@ -3,17 +3,20 @@ export class AppsService {
         {
           id: 1,
           displayName: "DystopiaGame",
-          appVersion: 1421
+          appVersion: 1421,
+          description: "An FPS RPG in UE4 developed by ZanyLeonic and DaRiceCake."
         },
         {
           id: 2,
-          displayName: "Rhys' Animal Crossing",
-          appVersion: 1021
+          displayName: "DaRiceCake's Animal Crossing",
+          appVersion: 1021,
+          description: "A recreation of Animal Crossing in UE4."
         },
         {
           id: 3,
           displayName: "Test App",
-          appVersion: 48
+          appVersion: 48,
+          description: "A test app for this."
         }
       ];
 
