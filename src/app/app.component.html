@@ -3,6 +3,7 @@
   <nav>
     <div class="nav-wrapper">
       <a href="#" class="brand-logo">{{ title }}</a>
+      <a href="#" data-target="mobile-navbar" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li
         routerLinkActive="active"
@@ -17,6 +18,18 @@
       </ul>
     </div>
   </nav>
+  <ul class="sidenav" id="mobile-navbar" style="z-index: 90;">
+    <li
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact: true}">
+    <a routerLink="/">Home</a></li>
+    <li
+    routerLinkActive="active">
+    <a routerLink="/app">Apps</a></li>
+    <li
+    routerLinkActive="active">
+    <a routerLink="/about">About</a></li>
+  </ul>
 </div>
 
 <div class="container">
