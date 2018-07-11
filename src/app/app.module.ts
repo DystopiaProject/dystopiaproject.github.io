@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { AppsComponent } from './apps/apps.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppsService } from './apps/apps.service';
+import { GlobalService } from './global.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,10 @@ import { AppsService } from './apps/apps.service';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [AppsService],
+  providers: [
+    GlobalService,
+    AppsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
