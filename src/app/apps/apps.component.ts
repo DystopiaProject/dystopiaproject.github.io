@@ -7,7 +7,7 @@ import { AppsService } from './apps.service';
   styleUrls: ['./apps.component.css']
 })
 export class AppsComponent implements OnInit {
-  private apps: {id: number, displayName: string, appVersion: number}[] = [];
+  apps: {id: number, displayName: string, appVersion: number}[] = [];
 
   constructor(private appServices: AppsService) { }
 

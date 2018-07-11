@@ -1,0 +1,3 @@
+@echo off
+title Pushing...
+ngh --branch=master
