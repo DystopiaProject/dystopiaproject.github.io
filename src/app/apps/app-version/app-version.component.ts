@@ -10,7 +10,7 @@ import { AppsService } from '../apps.service';
   styleUrls: ['./app-version.component.css']
 })
 export class AppVersionComponent implements OnInit {
-  app: {id: number, displayName: string, appVersion: number};
+  app: {id: number, displayName: string, appVersion: number, description: string};
 
   constructor(
     private appsServices: AppsService,
