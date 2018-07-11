@@ -1,18 +1,24 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="navbar-fixed">
+<div *ngIf="showNavBar" class="navbar-fixed">
   <nav>
     <div class="nav-wrapper">
       <a href="#" class="brand-logo">{{ title }}</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#">Patch notes</a></li>
-        <li><a href="#">Versions</a></li>
-        <li><a href="#">About</a></li>
+        <li
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true}">
+        <a routerLink="/">Home</a></li>
+        <li
+        routerLinkActive="active">
+        <a routerLink="/app">Apps</a></li>
+        <li
+        routerLinkActive="active">
+        <a routerLink="/about">About</a></li>
       </ul>
     </div>
   </nav>
 </div>
 
 <div class="container">
-  <h1>This content is being made.</h1>
-  <span>Come back later!</span>
+  <router-outlet></router-outlet>
 </div>
