@@ -9,3 +9,8 @@ div.navbar-fixed
 {
     z-index: 997;
 }
+
+a.brand-logo
+{
+    padding-left: 10px;
+}

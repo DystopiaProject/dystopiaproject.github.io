@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule }      from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { AppVersionComponent } from './apps/app-version/app-version.component';
@@ -10,6 +11,8 @@ import { AppsComponent } from './apps/apps.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppsService } from './apps/apps.service';
 import { GlobalService } from './global.service';
+import { UpdatesComponent } from './allupdates/updates/updates.component';
+import { AllupdatesComponent } from './allupdates/allupdates.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +22,13 @@ import { GlobalService } from './global.service';
     AppsComponent,
     AboutComponent,
     PageNotFoundComponent,
+    UpdatesComponent,
+    AllupdatesComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule
   ],
   providers: [
     GlobalService,

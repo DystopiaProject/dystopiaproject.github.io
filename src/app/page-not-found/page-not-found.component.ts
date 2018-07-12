@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { AppComponent } from '../app.component';
+import { GlobalService } from '../global.service';
 
 @Component({
   selector: 'app-page-not-found',
@@ -9,7 +10,7 @@ import { AppComponent } from '../app.component';
   styleUrls: ['./page-not-found.component.css']
 })
 export class PageNotFoundComponent implements OnInit {
-  errorInfo: {title: string, reqPath: string};
+  errorInfo: {title: string, reqPath: string, gitRepo: string};
 
   errorTitle = [
     "Huh.",
@@ -22,7 +23,10 @@ export class PageNotFoundComponent implements OnInit {
 
   randnum = 0;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(
+    private globalVar: GlobalService,
+    private route: ActivatedRoute
+  ) { }
 
   ngOnInit() {
     this.randnum = Math.floor(Math.random() * this.errorTitle.length);
@@ -31,7 +35,8 @@ export class PageNotFoundComponent implements OnInit {
 
     this.errorInfo = {
       title: this.errorTitle[this.randnum],
-      reqPath: this.route.snapshot.url.toString(),
+      reqPath: this.route.snapshot.url.toString().replace(",", "/"),
+      gitRepo: this.globalVar.gitRepo
     };
   }
 

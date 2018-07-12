@@ -2,7 +2,7 @@
 <div *ngIf="showNavBar" class="navbar-fixed">
   <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo">{{ title }}</a>
+      <a routerLink="/" class="brand-logo">{{ title }}</a>
       <a href="#" data-target="mobile-navbar" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li
@@ -14,11 +14,14 @@
         <a routerLink="/app">Apps</a></li>
         <li
         routerLinkActive="active">
+        <a routerLink="/updates">Updates</a></li>
+        <li
+        routerLinkActive="active">
         <a routerLink="/about">About</a></li>
       </ul>
     </div>
   </nav>
-  <ul class="sidenav" id="mobile-navbar" style="z-index: 90;">
+  <ul class="sidenav" id="mobile-navbar">
     <li
     routerLinkActive="active"
     [routerLinkActiveOptions]="{exact: true}">

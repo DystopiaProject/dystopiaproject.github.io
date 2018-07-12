@@ -15,6 +15,7 @@ export class AppVersionComponent implements OnInit {
   constructor(
     private appsServices: AppsService,
     private route: ActivatedRoute) { }
+    
 
   ngOnInit() {
     const id = +this.route.snapshot.params['id'];

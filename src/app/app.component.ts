@@ -26,5 +26,6 @@ export class AppComponent implements OnInit {
         this.showNavBar = queryParams['noNavBar']  === '1' ? false : true;
       }
     );
+    console.log(this.route.component);
   }
 }
