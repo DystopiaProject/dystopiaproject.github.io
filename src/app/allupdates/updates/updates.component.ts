@@ -16,7 +16,7 @@ private appInfo: AppInfo;
 private apps: [{DisplayName: string, AppVersion: number, Description: string}];
 private updates: [{AppId: number, PostName: string, PostDesc: string, PostLink: string, TimeStamp: number}];
 private allUpdatesVisible = true;
-private loaded = false;
+loaded = false;
 
 private appName = "";
 private appVer = 0;

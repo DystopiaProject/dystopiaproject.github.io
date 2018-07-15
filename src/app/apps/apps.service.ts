@@ -34,7 +34,7 @@ export class AppsService {
 
     getAppsData() : Observable<AppInfo>
     {
-        return this.http.get<AppInfo>("http://localhost:4200/assets/data/appinfo.json").pipe(map(res => res));
+        return this.http.get<AppInfo>("https://dystopiaproject.github.io/assets/data/appinfo.json").pipe(map(res => res));
     }
 
     getApp(id: number)
