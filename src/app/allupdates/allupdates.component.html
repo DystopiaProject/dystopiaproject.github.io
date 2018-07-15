@@ -1,8 +1,21 @@
-<div *ngIf="allUpdatesVisible">
-  <p>
-    allupdates works!
-  </p>
+<div class="loading" *ngIf="!loaded">
+  <div class="progress">
+      <div class="indeterminate"></div>
+  </div>
 </div>
-<div *ngIf="!allUpdatesVisible">
-  <router-outlet></router-outlet>
+<p class="app-title">Updates</p>
+<p class="app-desc">Lists all the updates for the apps that are listed on this site.</p>
+<div *ngIf="loaded">
+  <div *ngIf="allUpdatesVisible">
+    <div class="updates">
+      <div *ngFor="let update of updates; let i=index" class="update-item">
+        <p class="update-title">{{ update.PostName }}</p>
+        <span class="update-timestamp"><span class="material-icons">update</span>{{ update.TimeStamp * 1000 | date: 'medium'}}</span>
+        <span class="update-gametitle waves-effect waves-grey btn-flat" (click)="loadUpdates(update.AppId)"><span class="material-icons">games</span>{{ getApp(update.AppId).DisplayName }}</span>
+        <div class="update-content">
+          {{ update.PostDesc }}
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

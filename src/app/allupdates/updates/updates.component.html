@@ -1,3 +1,20 @@
-<p>
-  updates works!
-</p>
+<div class="loading" *ngIf="!loaded">
+    <div class="progress">
+        <div class="indeterminate"></div>
+    </div>
+</div>
+<div *ngIf="loaded">
+  <p class="app-title">{{ appName }}</p>
+  <p class="app-version">Latest version: {{appVer}}</p>
+  <p class="app-desc"> {{ appDesc }}</p>
+  <div class="updates">
+    <div *ngFor="let update of updates; let i=index" class="update-item">
+      <p class="update-title">{{ update.PostName }}</p>
+      <p class="update-timestamp"><span class="material-icons">update</span>{{ update.TimeStamp * 1000 | date: 'medium'}}</p>
+      <div class="update-content">
+        {{ update.PostDesc }}
+      </div>
+    </div>
+  </div>
+  <a (click)="goToAllUpdates()">Back to all updates</a>
+</div>

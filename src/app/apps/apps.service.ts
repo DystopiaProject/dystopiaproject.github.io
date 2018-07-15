@@ -1,5 +1,14 @@
+import { Injectable } from "@angular/core";
+import { Observable } from "rxjs";
+
+import { AppInfo } from "./AppInfo";
+import { HttpClient } from '@angular/common/http';
+import { map } from 'rxjs/operators';
+
+@Injectable()
 export class AppsService {
-    private apps = [
+    private appInfo: AppInfo;
+    private apps_old = [
         {
           id: 1,
           displayName: "DystopiaGame",
@@ -20,18 +29,16 @@ export class AppsService {
         }
       ];
 
-    getApps()
+
+    constructor(private http: HttpClient){}
+
+    getAppsData() : Observable<AppInfo>
     {
-        return this.apps;
+        return this.http.get<AppInfo>("http://localhost:4200/assets/data/appinfo.json").pipe(map(res => res));
     }
 
     getApp(id: number)
     {
-        const app = this.apps.find(
-            (s) => {
-                return s.id === id;
-            }
-        );
-        return app;
+  
     }
 }

@@ -1,0 +1,60 @@
+.app-title
+{
+    margin-top: 20px;
+    font-size: 3rem;
+    margin-bottom: -20px;
+}
+
+.app-version
+{
+    font-size: 0.8rem;
+    margin-bottom: -10px;
+}
+
+.updates
+{
+    margin-bottom: 20px;
+}
+
+.update-title {
+    color: #b9151b;
+    font-size: 2.9rem;
+    margin-top: 25px;
+    margin-bottom: 0%;
+    text-decoration: none;
+    transition: all 250ms ease;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+}
+
+.update-title:hover {
+    color: #b9151b;
+    text-shadow: 0 0 .01em #780000;
+    opacity: .8
+}
+
+.update-item {
+    padding-left: 5px;
+    padding-bottom: 10px
+}
+
+.update-content {
+    color: #000
+}
+
+.update-timestamp {
+    
+}
+
+.update-gametitle
+{
+    padding-left: 10px;
+}
+
+.material-icons
+{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}

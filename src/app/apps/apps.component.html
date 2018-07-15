@@ -1,13 +1,18 @@
-<div class="container">
+<div class="loading" *ngIf="!loaded">
+  <div class="progress">
+      <div class="indeterminate"></div>
+  </div>
+</div>
+<div class="container" *ngIf="loaded">
     <h1>Apps ({{ apps.length }})</h1>
     <div class="col-xs-12 col-sm-4">
       <ul>
-        <li *ngFor="let app of apps">
+        <li *ngFor="let app of apps; let i=index">
           <a class="waves-effect waves-grey btn-flat"
-          (click)="loadApp(app.id)"
+          (click)="loadApp(i)"
           routerLinkActive="red-text"
           >
-          {{ app.displayName }}
+          {{ app.DisplayName }}
           </a>
         </li>
       </ul>
@@ -15,4 +20,4 @@
     <div class="col-xs-12 col-sm-4">
       <router-outlet></router-outlet>
     </div>
-  </div>
+</div>

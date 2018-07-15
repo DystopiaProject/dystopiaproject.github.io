@@ -10,7 +10,7 @@ import { AppsService } from '../apps.service';
   styleUrls: ['./app-version.component.css']
 })
 export class AppVersionComponent implements OnInit {
-  app: {id: number, displayName: string, appVersion: number, description: string};
+  app: {DisplayName: string, AppVersion: number, Description: string};
 
   constructor(
     private appsServices: AppsService,
@@ -20,11 +20,23 @@ export class AppVersionComponent implements OnInit {
   ngOnInit() {
     const id = +this.route.snapshot.params['id'];
 
-    this.app = this.appsServices.getApp(id);
+    this.app = {
+      DisplayName: "Loading...",
+      AppVersion: 0,
+      Description: "Loading..."
+    };
+    
+    this.appsServices.getAppsData().subscribe(data => {
+      this.app = data.Apps[id];
+      console.log(this.app);
+    });
 
     this.route.params.subscribe( (params: Params) =>
       {
-        this.app = this.appsServices.getApp(+params['id']);
+        this.appsServices.getAppsData().subscribe(data => {
+          this.app = data.Apps[+params['id']];
+          console.log(this.app);
+        });
       }
     );
   }

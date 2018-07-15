@@ -15,9 +15,8 @@ const appRoutes: Routes = [
         { path: ':id', component: AppVersionComponent }
     ]},
     { path: 'about', component: AboutComponent },
-    { path: 'updates', component: AllupdatesComponent, children : [
-      { path: ':id', component: UpdatesComponent }
-    ] },
+    { path: 'updates', component: AllupdatesComponent },
+    { path: 'updates/:id', component: UpdatesComponent },
     { path: 'not-found', component: PageNotFoundComponent },
     { path: '**', component: PageNotFoundComponent}
 ];
