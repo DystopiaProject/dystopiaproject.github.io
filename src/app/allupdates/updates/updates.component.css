@@ -1,2 +1,6 @@
 @import "../allupdates.component.css";
 
+.backtoall-btn
+{
+    margin-bottom: 50px;
+}

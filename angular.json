@@ -29,6 +29,7 @@
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/chaffle/chaffle.min.js",
               "src/assets/js/materialize.min.js",
               "src/assets/js/init.js"
             ]

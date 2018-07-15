@@ -1,20 +1,33 @@
 <div class="loading" *ngIf="!loaded">
-    <div class="progress">
-        <div class="indeterminate"></div>
+    <div class="loader">
+      <div class="progress">
+          <div class="indeterminate"></div>
+      </div>
     </div>
 </div>
-<div *ngIf="loaded">
-  <p class="app-title">{{ appName }}</p>
+<div *ngIf="loaded" >
+  <p class="app-title" data-chaffle data-chaffle-onload>{{ appName }}</p>
   <p class="app-version">Latest version: {{appVer}}</p>
-  <p class="app-desc"> {{ appDesc }}</p>
+  <p class="app-desc">{{ appDesc }}</p>
   <div class="updates">
-    <div *ngFor="let update of updates; let i=index" class="update-item">
-      <p class="update-title">{{ update.PostName }}</p>
-      <p class="update-timestamp"><span class="material-icons">update</span>{{ update.TimeStamp * 1000 | date: 'medium'}}</p>
-      <div class="update-content">
-        {{ update.PostDesc }}
+    <div class="row">
+      <div class="update-item" *ngIf="updates.length == 0">
+        <p class="app-title">It's lonely here.</p>
+        <p></p>
+        <div class="update-content">No updates for this app.</div>
+      </div>
+      <div *ngFor="let update of updates; let i=index" class="update-item card grey darken-3">
+        <div class="card-content white-text">
+          <p class="update-title">{{ update.PostName }}</p>
+          <p class="update-content white-text">
+            {{ update.PostDesc }}
+          </p>
+        </div>
+        <div class="card-action">
+          <span class="update-timestamp white-text"><span class="material-icons">update</span>{{ update.TimeStamp * 1000 | date: 'medium'}}</span>
+        </div>
       </div>
     </div>
   </div>
-  <a (click)="goToAllUpdates()">Back to all updates</a>
+  <span class="backtoall-btn waves-effect waves-grey btn-flat" (click)="goToAllUpdates()">Back to all updates</span>
 </div>

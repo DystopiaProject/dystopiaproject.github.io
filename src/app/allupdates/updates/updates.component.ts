@@ -3,6 +3,7 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 import { GlobalService } from '../../global.service';
 import { AppInfo } from '../../apps/AppInfo';
 import { AppsService } from '../../apps/apps.service';
+import Chaffle from 'chaffle';
 
 @Component({
   selector: 'app-updates',
@@ -20,6 +21,8 @@ private loaded = false;
 private appName = "";
 private appVer = 0;
 private appDesc = "";
+private intialCheck = false;
+private checks: number = 0;
 
   constructor(
     private globalService: GlobalService,
@@ -30,7 +33,6 @@ private appDesc = "";
      }
 
   ngOnInit() {
-    
     this.updates = 
     [
       {
@@ -61,7 +63,7 @@ private appDesc = "";
             else if(a.TimeStamp < b.TimeStamp) return 1;
             else return 0;
           });
-          console.log(this.updates);
+          
         }
       }
     );
@@ -85,7 +87,6 @@ private appDesc = "";
       });
       console.log(this.updates);
     });
-
   }
 
   getNewsFromApp(id: number)
@@ -110,4 +111,18 @@ private appDesc = "";
     this.router.navigate(["../"], {relativeTo: this.route, queryParamsHandling: 'preserve'});
   }
 
+  callChaffle()
+  {
+        const elements = document.querySelectorAll('[data-chaffle-onLoad]');
+          Array.prototype.forEach.call(elements, function (el) {
+          const chaffle = new Chaffle(el, { 
+            lang: 'en', // default: 'en'
+            // 'en' || 'ja' || 'ja-hiragana' || 'ja-katakana' || 'ua'
+            speed: 20, // default: 20
+            delay: 100, // default: 100
+          });
+          chaffle.init();
+            console.log(el);
+          });
+  }
 }

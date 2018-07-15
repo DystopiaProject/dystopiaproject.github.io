@@ -17,7 +17,7 @@
 }
 
 .update-title {
-    color: #b9151b;
+    color: #FF0000;
     font-size: 2.9rem;
     margin-top: 25px;
     margin-bottom: 0%;
@@ -44,10 +44,6 @@
     color: #000
 }
 
-.update-timestamp {
-    
-}
-
 .update-gametitle
 {
     padding-left: 10px;
@@ -57,4 +53,6 @@
 {
     margin-bottom: 0px;
     margin-top: 0px;
+    display: inline-flex;
+    vertical-align: middle;
 }

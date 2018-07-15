@@ -1,6 +1,8 @@
 <div class="loading" *ngIf="!loaded">
-  <div class="progress">
-      <div class="indeterminate"></div>
+  <div class="loader">
+    <div class="progress">
+        <div class="indeterminate"></div>
+    </div>
   </div>
 </div>
 <p class="app-title">Updates</p>
@@ -8,14 +10,23 @@
 <div *ngIf="loaded">
   <div *ngIf="allUpdatesVisible">
     <div class="updates">
-      <div *ngFor="let update of updates; let i=index" class="update-item">
-        <p class="update-title">{{ update.PostName }}</p>
-        <span class="update-timestamp"><span class="material-icons">update</span>{{ update.TimeStamp * 1000 | date: 'medium'}}</span>
-        <span class="update-gametitle waves-effect waves-grey btn-flat" (click)="loadUpdates(update.AppId)"><span class="material-icons">games</span>{{ getApp(update.AppId).DisplayName }}</span>
-        <div class="update-content">
-          {{ update.PostDesc }}
+      <div class="update-item" *ngIf="updates.length == 0">
+        <p class="app-title">It's lonely here.</p>
+        <p></p>
+        <div class="update-content">No updates available.</div>
+      </div>
+      <div *ngFor="let update of updates; let i=index" class="update-item card grey darken-3">
+        <div class="card-content white-text">
+          <p class="update-title">{{ update.PostName }}</p>
+          <p class="update-content white-text">
+            {{ update.PostDesc }}
+          </p>
+        </div>
+        <div class="card-action">
+          <span class="update-timestamp white-text"><span class="material-icons">update</span>{{ update.TimeStamp * 1000 | date: 'medium'}}</span>
+          <span class="update-gametitle waves-effect waves-grey btn-flat white-text" (click)="loadUpdates(update.AppId)"><span class="material-icons">games</span>{{ getApp(update.AppId).DisplayName }}</span>
+        </div>
         </div>
       </div>
     </div>
-  </div>
 </div>
