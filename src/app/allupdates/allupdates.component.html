@@ -23,8 +23,16 @@
           </p>
         </div>
         <div class="card-action">
-          <span class="update-timestamp white-text"><span class="material-icons">update</span>{{ update.TimeStamp * 1000 | date: 'medium'}}</span>
-          <span class="update-gametitle waves-effect waves-grey btn-flat white-text" (click)="loadUpdates(update.AppId)"><span class="material-icons">games</span>{{ getApp(update.AppId).DisplayName }}</span>
+          <ul>
+              <li class="update-timestamp white-text waves-effect waves-grey btn-flat">
+                <i class="material-icons">update</i>
+                <a>{{ update.TimeStamp * 1000 | date: 'medium'}}</a>
+              </li>
+              <li class="update-gametitle white-text waves-effect waves-grey btn-flat" (click)="loadUpdates(update.AppId)">
+                <i class="material-icons">games</i>
+                <a>{{ getApp(update.AppId).DisplayName }}</a>
+              </li>
+          </ul>
         </div>
         </div>
       </div>

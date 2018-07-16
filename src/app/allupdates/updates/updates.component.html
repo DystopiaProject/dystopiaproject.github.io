@@ -24,7 +24,12 @@
           </p>
         </div>
         <div class="card-action">
-          <span class="update-timestamp white-text"><span class="material-icons">update</span>{{ update.TimeStamp * 1000 | date: 'medium'}}</span>
+          <ul>
+              <li>
+                <i class="material-icons">update</i>
+                <a class="update-timestamp white-text waves-grey btn-flat">{{ update.TimeStamp * 1000 | date: 'medium'}}</a>
+                </li>
+            </ul>
         </div>
       </div>
     </div>
