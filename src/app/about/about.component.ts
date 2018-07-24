@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalService } from '../global.service';
 
 @Component({
   selector: 'app-about',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  AppName:string = "[AppName]";
+  AppVersion:string = "0.0.0.0";
+  BrowserUA:string;
+
+  constructor(private globalService: GlobalService) { }
 
   ngOnInit() {
+    this.AppName = this.globalService.title;
+    this.AppVersion = this.globalService.appVersion;
+    this.BrowserUA = window.navigator.userAgent;
   }
-
 }

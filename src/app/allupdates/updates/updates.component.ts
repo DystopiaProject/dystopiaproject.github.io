@@ -85,7 +85,6 @@ private checks: number = 0;
         else if(a.TimeStamp < b.TimeStamp) return 1;
         else return 0;
       });
-      console.log(this.updates);
     });
   }
 

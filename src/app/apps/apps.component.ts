@@ -32,7 +32,6 @@ export class AppsComponent implements OnInit {
       this.appInfo = data;
       this.apps = this.appInfo.Apps;
       this.loaded = true;
-      console.log(this.apps);
     });
   }
 

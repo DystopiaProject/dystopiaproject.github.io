@@ -17,7 +17,7 @@
 }
 
 .update-title {
-    color: #FF0000;
+    color: #ffc107;
     font-size: 2.9rem;
     margin-top: 25px;
     margin-bottom: 0%;
@@ -30,8 +30,8 @@
 }
 
 .update-title:hover {
-    color: #b9151b;
-    text-shadow: 0 0 .01em #780000;
+	color:#ffc107;
+	text-shadow:0px 0px .01em #d84315;
     opacity: .8
 }
 
@@ -41,13 +41,24 @@
 }
 
 .update-content {
-    color: #000
+    color: #FFF;
+    white-space: pre-wrap;
 }
 
 .update-gametitle
 {
     padding-top: 0px;
     padding-left: 10px;
+}
+
+.update-timestamp i
+{
+    color: #ffc107;
+}
+
+.update-gametitle i
+{
+    color: #ffc107;
 }
 
 .material-icons

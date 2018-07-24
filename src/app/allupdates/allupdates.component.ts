@@ -39,7 +39,6 @@ export class AllupdatesComponent implements OnInit {
     this.route.params.subscribe( (params: Params) =>
       {
         this.allUpdatesVisible = this.globalService.allUpdatesVisible;
-        console.log(this.allUpdatesVisible);
       }
     );
 
@@ -54,7 +53,6 @@ export class AllupdatesComponent implements OnInit {
         else if(a.TimeStamp < b.TimeStamp) return 1;
         else return 0;
       });
-      console.log(this.updates);
     });
   }
 
