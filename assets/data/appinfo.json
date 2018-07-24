@@ -28,20 +28,6 @@
       "PostDesc": "With the initial progress of DystopiaGame coming along nicely, a pre-alpha is going to be released soon for download.\r\n\r\nThis pre-alpha is mainly for testing for bugs and fine tuning the features currently available. \r\nPeriods between releases will be filled with progress reports and screenshots for new features for the next upcoming release.\r\n\r\nWe really hope you enjoy the pre-alpha as much as I have had fun making it. \r\n~ ZanyLeonic",
       "PostLink": "http://dystopiaproject.github.io/",
       "TimeStamp": 1531699716
-    },
-    {
-      "AppId": 1,
-      "PostName": "Development start!",
-      "PostDesc": "Development has started on DaRiceCake's Animal Crossing game in UE4!",
-      "PostLink": "http://dystopiaproject.github.io/",
-      "TimeStamp": 1530457329
-    },
-    {
-      "AppId": 2,
-      "PostName": "This is a test post",
-      "PostDesc": "This is to test the posts system.",
-      "PostLink": "http://dystopiaproject.github.io/",
-      "TimeStamp": 1531778676
     }
   ]
 }
