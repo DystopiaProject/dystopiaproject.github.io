@@ -2,28 +2,21 @@
   "Apps": [
     {
       "DisplayName": "DystopiaGame",
-      "AppVersion": 1421,
-      "Description": "An FPS RPG made in UE4"
+      "AppVersion": 1409,
+      "Description": "An project made in UE4.",
+      "AppLink": "https://github.com/DystopiaProject/DystopiaGame.Launcher/releases/latest/",
+      "DownloadText": "Download Launcher"
     },
     {
       "DisplayName": "DaRiceCake's Animal Crossing",
       "AppVersion": 1021,
       "Description": "A recreation of Animal Crossing in UE4."
-    },
-    {
-      "DisplayName": "Test App",
-      "AppVersion": 48,
-      "Description": "A test app for this."
-    },
-    {
-      "DisplayName": "Test App2",
-      "AppVersion": 48,
-      "Description": "A test app for this."
     }
   ],
   "Updates": [
     {
       "AppId": 0,
+      "Author": "ZanyLeonic",
       "PostName": "Pre-Alpha announcement",
       "PostDesc": "With the initial progress of DystopiaGame coming along nicely, a pre-alpha is going to be released soon for download.\r\n\r\nThis pre-alpha is mainly for testing for bugs and fine tuning the features currently available. \r\nPeriods between releases will be filled with progress reports and screenshots for new features for the next upcoming release.\r\n\r\nWe really hope you enjoy the pre-alpha as much as I have had fun making it. \r\n~ ZanyLeonic",
       "PostLink": "http://dystopiaproject.github.io/",
