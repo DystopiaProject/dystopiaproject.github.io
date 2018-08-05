@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 })
 export class AppsComponent implements OnInit {
   private appInfo: AppInfo;
-  apps: [{DisplayName: string, AppVersion: number, Description: string}];
+  apps: [{DisplayName: string, AppVersion: number, Description: string, AppLink: string, DownloadText: string}];
   loaded = false;
 
   constructor(private appServices: AppsService,
@@ -25,7 +25,9 @@ export class AppsComponent implements OnInit {
     this.apps = [{
       DisplayName: "Loading...",
       AppVersion: 0,
-      Description: "Loading..."
+      Description: "Loading...",
+      AppLink: "",
+      DownloadText: ""
     }];
 
     this.appServices.getAppsData().subscribe(data => {

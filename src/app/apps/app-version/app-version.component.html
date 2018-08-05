@@ -1,3 +1,6 @@
 <h4>{{ app.DisplayName }}</h4>
 <p>Version: <span id="appVersion">{{ app.AppVersion }}</span></p>
 <h5>Description:</h5><p>{{ app.Description }}</p>
+<div *ngIf="DownloadsAvailable">
+    <a href="{{app.AppLink}}" target="_blank" class="waves-effects waves-light btn"><i class="material-icons left">file_download</i> {{ app.DownloadText }}</a>
+</div>

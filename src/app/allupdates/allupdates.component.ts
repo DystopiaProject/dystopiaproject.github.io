@@ -11,8 +11,8 @@ import { AppInfo } from '../apps/AppInfo';
 })
 export class AllupdatesComponent implements OnInit {
   private appInfo: AppInfo;
-  apps: [{DisplayName: string, AppVersion: number, Description: string}];
-  updates: [{AppId: number, PostName: string, PostDesc: string, PostLink: string, TimeStamp: number}];
+  apps: [{DisplayName: string, AppVersion: number, Description: string, AppLink: string, DownloadText: string}];
+  updates: [{AppId: number, Author: string, PostName: string, PostDesc: string, PostLink: string, TimeStamp: number}];
   allUpdatesVisible = true;
   loaded = false;
 
@@ -29,6 +29,7 @@ export class AllupdatesComponent implements OnInit {
     [
       {
         AppId: -1,
+        Author: "NULL",
         PostName: "Loading...",
         PostDesc: "Please wait...",
         PostLink: "",

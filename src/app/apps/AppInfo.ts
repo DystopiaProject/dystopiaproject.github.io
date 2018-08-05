@@ -1,10 +1,10 @@
 export class AppInfo {
     constructor(
         public Apps: [{
-            DisplayName: string, AppVersion: number, Description: string
+            DisplayName: string, AppVersion: number, Description: string, AppLink: string, DownloadText: string
         }],
         public Updates: [{
-            AppId: number, PostName: string, PostDesc: string, PostLink: string, TimeStamp: number
+            AppId: number, Author: string, PostName: string, PostDesc: string, PostLink: string, TimeStamp: number
           }]
     )
     { }

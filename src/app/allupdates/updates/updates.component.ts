@@ -13,8 +13,8 @@ import Chaffle from 'chaffle';
 export class UpdatesComponent implements OnInit {
 private id: number;
 private appInfo: AppInfo;
-private apps: [{DisplayName: string, AppVersion: number, Description: string}];
-private updates: [{AppId: number, PostName: string, PostDesc: string, PostLink: string, TimeStamp: number}];
+private apps: [{DisplayName: string, AppVersion: number, Description: string, AppLink: string, DownloadText: string}];
+private updates: [{AppId: number, Author: string, PostName: string, PostDesc: string, PostLink: string, TimeStamp: number}];
 private allUpdatesVisible = true;
 loaded = false;
 
@@ -37,6 +37,7 @@ private checks: number = 0;
     [
       {
         AppId: -1,
+        Author: "NULL",
         PostName: "Loading...",
         PostDesc: "Please wait...",
         PostLink: "",
@@ -90,7 +91,7 @@ private checks: number = 0;
 
   getNewsFromApp(id: number)
   {
-    var appUpdates: [{AppId: number, PostName: string, PostDesc: string, PostLink: string, TimeStamp: number}] = [{AppId: -1, PostName: "", PostDesc: "", PostLink: "", TimeStamp: 0}];
+    var appUpdates: [{AppId: number, Author: string, PostName: string, PostDesc: string, PostLink: string, TimeStamp: number}] = [{AppId: -1, Author: "NULL", PostName: "", PostDesc: "", PostLink: "", TimeStamp: 0}];
     appUpdates.shift();
 
     this.updates.forEach((s) =>

@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
-
+import { environment } from '../../environments/environment';
 import { AppInfo } from "./AppInfo";
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
@@ -34,11 +34,11 @@ export class AppsService {
 
     getAppsData() : Observable<AppInfo>
     {
-        return this.http.get<AppInfo>("https://dystopiaproject.github.io/assets/data/appinfo.json").pipe(map(res => res));
+      return this.http.get<AppInfo>(`${environment.baseApiUrl}/assets/data/appinfo.json`).pipe(map(res => res));
     }
 
     getApp(id: number)
     {
-  
+      return null;
     }
 }
