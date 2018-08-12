@@ -2,8 +2,8 @@
   "Apps": [
     {
       "DisplayName": "DystopiaGame",
-      "AppVersion": 1665,
-      "Description": "A project made in UE4.",
+      "AppVersion": 1409,
+      "Description": "An project made in UE4.",
       "AppLink": "https://github.com/DystopiaProject/DystopiaGame.Launcher/releases/latest/",
       "DownloadText": "Download Launcher"
     },
