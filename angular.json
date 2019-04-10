@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "DystopiaProjectPatchNotes": {
+    "DystopiaProject-PatchNotes": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -141,7 +141,7 @@
         }
       }
     },
-    "DystopiaProjectPatchNotes-e2e": {
+    "DystopiaProject-PatchNotes-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
