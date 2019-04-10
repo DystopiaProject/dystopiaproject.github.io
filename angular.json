@@ -40,7 +40,8 @@
               "src/apple-touch-icon-120x120.png",
               "src/apple-touch-icon-144x144.png",
               "src/apple-touch-icon-152x152.png",
-              "src/apple-touch-icon-180x180.png"
+              "src/apple-touch-icon-180x180.png",
+              "src/manifest.json"
             ],
             "styles": [
               "src/assets/css/materialize.min.css",
@@ -70,25 +71,27 @@
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true
+              "buildOptimizer": true,
+              "serviceWorker": true,
+              "ngswConfigPath": "src/ngsw-config.json"
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "DystopiaProjectPatchNotes:build"
+            "browserTarget": "DystopiaProject-PatchNotes:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "DystopiaProjectPatchNotes:build:production"
+              "browserTarget": "DystopiaProject-PatchNotes:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "DystopiaProjectPatchNotes:build"
+            "browserTarget": "DystopiaProject-PatchNotes:build"
           }
         },
         "test": {
@@ -123,7 +126,8 @@
               "src/apple-touch-icon-120x120.png",
               "src/apple-touch-icon-144x144.png",
               "src/apple-touch-icon-152x152.png",
-              "src/apple-touch-icon-180x180.png"
+              "src/apple-touch-icon-180x180.png",
+              "src/manifest.json"
             ]
           }
         },
@@ -149,7 +153,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "DystopiaProjectPatchNotes:serve"
+            "devServerTarget": "DystopiaProject-PatchNotes:serve"
           }
         },
         "lint": {

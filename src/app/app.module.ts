@@ -14,6 +14,8 @@ import { AppsService } from './apps/apps.service';
 import { GlobalService } from './global.service';
 import { UpdatesComponent } from './allupdates/updates/updates.component';
 import { AllupdatesComponent } from './allupdates/allupdates.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { AllupdatesComponent } from './allupdates/allupdates.component';
     BrowserModule,
     AppRoutingModule,
     HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     GlobalService,
