@@ -1,0 +1,110 @@
+{
+  "configVersion": 1,
+  "timestamp": 1554940751080,
+  "index": "https://dystopiaproject.github.io/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://dystopiaproject.github.io/favicon.ico",
+        "https://dystopiaproject.github.io/index.html",
+        "https://dystopiaproject.github.io/main.c2651387dca592f3478c.js",
+        "https://dystopiaproject.github.io/polyfills.73dead7e6f0fc0493569.js",
+        "https://dystopiaproject.github.io/runtime.26209474bfa8dc87a77c.js",
+        "https://dystopiaproject.github.io/scripts.1554e734526b3d54ccc0.js",
+        "https://dystopiaproject.github.io/styles.f39ae9096f99fbb4b165.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://dystopiaproject.github.io/MaterialIcons-Regular.012cf6a10129e2275d79.woff",
+        "https://dystopiaproject.github.io/MaterialIcons-Regular.570eb83859dc23dd0eec.woff2",
+        "https://dystopiaproject.github.io/MaterialIcons-Regular.a37b0c01c0baf1888ca8.ttf",
+        "https://dystopiaproject.github.io/MaterialIcons-Regular.e79bfd88537def476913.eot",
+        "https://dystopiaproject.github.io/apple-touch-icon.png",
+        "https://dystopiaproject.github.io/assets/css/materialize.css",
+        "https://dystopiaproject.github.io/assets/css/materialize.css.map",
+        "https://dystopiaproject.github.io/assets/css/materialize.min.css",
+        "https://dystopiaproject.github.io/assets/css/materialize.min.css.map",
+        "https://dystopiaproject.github.io/assets/data/appinfo.json",
+        "https://dystopiaproject.github.io/assets/icons/icon-128x128.png",
+        "https://dystopiaproject.github.io/assets/icons/icon-144x144.png",
+        "https://dystopiaproject.github.io/assets/icons/icon-152x152.png",
+        "https://dystopiaproject.github.io/assets/icons/icon-192x192.png",
+        "https://dystopiaproject.github.io/assets/icons/icon-384x384.png",
+        "https://dystopiaproject.github.io/assets/icons/icon-512x512.png",
+        "https://dystopiaproject.github.io/assets/icons/icon-72x72.png",
+        "https://dystopiaproject.github.io/assets/icons/icon-96x96.png",
+        "https://dystopiaproject.github.io/assets/js/init.js",
+        "https://dystopiaproject.github.io/assets/js/materialize.js",
+        "https://dystopiaproject.github.io/assets/js/materialize.min.js",
+        "https://dystopiaproject.github.io/favicon-16x16.png",
+        "https://dystopiaproject.github.io/favicon-32x32.png",
+        "https://dystopiaproject.github.io/logo.png",
+        "https://dystopiaproject.github.io/mstile-150x150.png",
+        "https://dystopiaproject.github.io/safari-pinned-tab.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://dystopiaproject.github.io/MaterialIcons-Regular.012cf6a10129e2275d79.woff": "c6c953c2ccb2ca9abb21db8dbf473b5a435f0082",
+    "https://dystopiaproject.github.io/MaterialIcons-Regular.570eb83859dc23dd0eec.woff2": "09963592e8c953cc7e14e3fb0a5b05d5042e8435",
+    "https://dystopiaproject.github.io/MaterialIcons-Regular.a37b0c01c0baf1888ca8.ttf": "fc05de31234e0090f7ddc28ce1b23af4026cb1da",
+    "https://dystopiaproject.github.io/MaterialIcons-Regular.e79bfd88537def476913.eot": "26fb8cecb5512223277b4d290a24492a0f09ede1",
+    "https://dystopiaproject.github.io/apple-touch-icon.png": "1f27b723aa2201d346e4e239bd3d3c62f9a06728",
+    "https://dystopiaproject.github.io/assets/css/materialize.css": "ca2aca8375e91a2c3b83e899d5b232d50dba7d0f",
+    "https://dystopiaproject.github.io/assets/css/materialize.css.map": "7b3b707353f90cd74cbd0de75bba7ed8d140de89",
+    "https://dystopiaproject.github.io/assets/css/materialize.min.css": "db0ab95d4098093f66d42aad2ea913e58cf4b340",
+    "https://dystopiaproject.github.io/assets/css/materialize.min.css.map": "4320202f747ebcf6578661b731af5a53fa576ccb",
+    "https://dystopiaproject.github.io/assets/data/appinfo.json": "28c29af4fbef791f42b591291f16a7bd1645ef71",
+    "https://dystopiaproject.github.io/assets/icons/icon-128x128.png": "86868828ec0368db691102549d54600454b9be21",
+    "https://dystopiaproject.github.io/assets/icons/icon-144x144.png": "dc1d8c9557d2219819690dc8ea6bccd72a4baf28",
+    "https://dystopiaproject.github.io/assets/icons/icon-152x152.png": "bbb0abc0d76b8300f30057c480a39494c37d20e6",
+    "https://dystopiaproject.github.io/assets/icons/icon-192x192.png": "c4c409d2d18a532a643cab0de987ee778f3411f9",
+    "https://dystopiaproject.github.io/assets/icons/icon-384x384.png": "fae824d1d3ec8d99155ef5c597f686076a9741b5",
+    "https://dystopiaproject.github.io/assets/icons/icon-512x512.png": "a363def47dc83de15bd8e17f18832d5016beadfc",
+    "https://dystopiaproject.github.io/assets/icons/icon-72x72.png": "de86d37c8f0260a46f02086a302fd47101e31502",
+    "https://dystopiaproject.github.io/assets/icons/icon-96x96.png": "835a328b40a57d7ce6c9c23b89d86842add056d3",
+    "https://dystopiaproject.github.io/assets/js/init.js": "e6f9b1afe86faf0ee2daeac53a451ec7f2b6d8f7",
+    "https://dystopiaproject.github.io/assets/js/materialize.js": "89745b56565f67faee9f94f42a64f162e3d4435f",
+    "https://dystopiaproject.github.io/assets/js/materialize.min.js": "cdda9f9e768b9a0e5f59a7f17b73c4f1bf4db7ed",
+    "https://dystopiaproject.github.io/favicon-16x16.png": "578e7796f6c09d6462e71d52369e51c66d7de02e",
+    "https://dystopiaproject.github.io/favicon-32x32.png": "380e9a822f4051cdbed28993380446d6c42b9cf3",
+    "https://dystopiaproject.github.io/favicon.ico": "015a67bc6488a5745113e586afb6a62ea9ff6af2",
+    "https://dystopiaproject.github.io/index.html": "3fff251de71bfab4a26973961fd6e49bf49fc0c3",
+    "https://dystopiaproject.github.io/logo.png": "07baedd3eaeaceba3f6ccb80d4f963f619076380",
+    "https://dystopiaproject.github.io/main.c2651387dca592f3478c.js": "91b0edaf4804fa1d818ab3b06f21e356ee339993",
+    "https://dystopiaproject.github.io/mstile-150x150.png": "3fc2390a5adfeda33b76931aa74ec884cf980c63",
+    "https://dystopiaproject.github.io/polyfills.73dead7e6f0fc0493569.js": "849302d47a368476386353d9e2322d222852f515",
+    "https://dystopiaproject.github.io/runtime.26209474bfa8dc87a77c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "https://dystopiaproject.github.io/safari-pinned-tab.svg": "764a08fcafa565a8ca307d3c7abc147a0556b32f",
+    "https://dystopiaproject.github.io/scripts.1554e734526b3d54ccc0.js": "f16db002210bf3ef8d87bed9213a1c6fb2902bd2",
+    "https://dystopiaproject.github.io/styles.f39ae9096f99fbb4b165.css": "169fc3240eb123923a54514393403e76b263180a"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
